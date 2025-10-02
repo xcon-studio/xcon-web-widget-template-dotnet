@@ -3,3 +3,4 @@
 /WebApplication1/obj
 /WebApplication1/.tmp
 /.vs
+/WebApplication1/package-lock.json
