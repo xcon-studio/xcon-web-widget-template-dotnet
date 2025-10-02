@@ -1,0 +1,20 @@
+{
+  "configurations": {
+    "provider": "web"
+  },
+  "build": {
+    "debug": true,
+    "entry": "app.bootstrap.ts",
+    "sourceRoot": "src",
+    "outputFilename": "index.js",
+    "outputPath": "dist",
+    "tsConfig": "tsconfig.app.json",
+    "externals": {
+      "@xcons/common": "XConsCommon",
+      "@xcons/core": "XConsCore",
+      "@xcons/widget": "XConWidgets"
+    }
+  },
+  "projectType": "widget",
+  "version": "1.0"
+}

@@ -1,0 +1,44 @@
+{
+    "name": "xcon-test-widget",
+    "version": "1.0.0",
+    "description": "XCons Widget - TypeScript Development Kit",
+    "main": "dist/app.js",
+    "scripts": {
+        "dev": "vite --config vite.config.dev.js",
+        "start": "npm run dev"
+    },
+    "devDependencies": {
+        "@types/jquery": "^3.5.0",
+        "@types/node": "^20.0.0",
+        "@xcons/common": "^2.0.11",
+        "@xcons/core": "^2.0.1",
+        "@xcons/vite-plugin": "^1.1.97",
+        "@xcons/widget": "^1.4.46",
+        "eslint": "^9.36.0",
+        "reflect-metadata": "^0.2.2",
+        "terser": "^5.44.0",
+        "terser-webpack-plugin": "^5.3.14",
+        "ts-loader": "^9.5.4",
+        "typescript": "~5.5.2",
+        "vite": "^7.1.5",
+        "webpack": "^5.101.3",
+        "webpack-cli": "^6.0.1"
+    },
+    "keywords": [
+        "xcon",
+        "xcon-studio",
+        "widget",
+        "typescript",
+        "xcon-development-kit"
+    ],
+    "author": "XCon Studio Team",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/xcon-studio/xcon-web-widget-template-dotnet.git"
+    },
+    "homepage": "https://github.com/xcon-studio/xcon-web-widget-template-dotnet#readme",
+    "bugs": {
+        "url": "https://github.com/xcon-studio/xcon-web-widget-template-dotnet/issues"
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "target": "ES2020",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "outDir": ".tmp/types",
+        "rootDir": "./scripts",
+        "strict": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "declaration": true,
+        "declarationMap": true,
+        "sourceMap": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true
+    },
+    "include": [
+        "Views/**/*",
+        "scripts/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "wwwroot",
+        ".tmp",
+        "obj"
+    ]
+}
