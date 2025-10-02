@@ -5,6 +5,10 @@
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<PreserveCompilationContext>true</PreserveCompilationContext>
+		<CopyRazorGenerateFilesToPublishDirectory>true</CopyRazorGenerateFilesToPublishDirectory>
+		<CopyRefAssembliesToPublishDirectory>false</CopyRefAssembliesToPublishDirectory>
+		<MvcRazorCompileOnPublish>false</MvcRazorCompileOnPublish>
+		<RazorCompileOnBuild>false</RazorCompileOnBuild>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -31,4 +35,10 @@
 		<Watch Include="scripts\**\*.ts" />
 		<Watch Include="scripts\**\*.html" />
 	</ItemGroup>
+
+	<Target Name="RunXConBuild" BeforeTargets="PrepareForPublish">
+		<Message Text="Running XCon CLI build command..." Importance="high" />
+		<Exec Command="npx @xcons/cli dotnet build" WorkingDirectory="$(ProjectDir)" />
+	</Target>
+
 </Project>
