@@ -38,6 +38,8 @@
 
 	<Target Name="RunXConBuild" BeforeTargets="PrepareForPublish">
 		<Message Text="Running XCon CLI build command..." Importance="high" />
+		<Exec Command="npm install" WorkingDirectory="$(ProjectDir)" />
+		<Exec Command="npm run build:tailwind" WorkingDirectory="$(ProjectDir)" />
 		<Exec Command="npx @xcons/cli dotnet build" WorkingDirectory="$(ProjectDir)" />
 	</Target>
 

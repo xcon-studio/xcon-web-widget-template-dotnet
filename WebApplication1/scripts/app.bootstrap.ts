@@ -1,4 +1,5 @@
-import {XConBootstrap} from "@xcons/widget";
+import './styles/tailwind.css';
+import { XConBootstrap } from "@xcons/widget";
 import App from "./app";
 import { WidgetTextService } from "./widget_binding_text/models/widget-service-text";
 import TestBindingText from "./widget_binding_text/widget";
@@ -12,7 +13,7 @@ XConBootstrap.run({
         }
     ],
     services: [
-        {service: WidgetTextService}
+        { service: WidgetTextService }
     ],
     providers: [
         {
@@ -21,7 +22,7 @@ XConBootstrap.run({
         },
         {
             token: 'CONFIG',
-            useFactory: () => ({debug: true, version: '1.0.0'})
+            useFactory: () => ({ debug: true, version: '1.0.0' })
         }
     ]
 });
