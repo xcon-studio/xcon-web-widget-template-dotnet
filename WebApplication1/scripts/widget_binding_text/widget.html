@@ -1,12 +1,13 @@
-<div class="example-container">
-    <div class="section">
-        <h3>BINDING TEXT</h3>
-        <p>Current Date: <strong x:text="currentDate"></strong></p>
-        <button x:on:click="updateDate">Update Date</button>
+<div class="p-5 h-full overflow-auto font-sans">
+	<div class="mb-8 p-5 border border-gray-300 rounded-lg">
+		<h3 class="mt-0 text-gray-800">BINDING TEXT</h3>
+		<p class="mb-4">Current Date: <strong x:text="currentDate" class="font-bold"></strong></p>
+		<button x:on:click="updateDate" class="bg-blue-500 hover:bg-blue-600 text-white px-5 py-2 rounded cursor-pointer text-sm border-none">Update Date</button>
 
-        <p>Model Current Date: <strong x:text="model.currentDate"></strong></p>
-        <button x:on:click="model.updateDate">Model Update Date</button>
-        <p>Current Date: <strong x:text="serviceModel.currentDate"></strong></p>
-        <button x:on:click="serviceTest">Service Update Date</button>
-    </div>
+		<p class="mb-4 mt-4">Model Current Date: <strong x:text="model.currentDate" class="font-bold"></strong></p>
+		<button x:on:click="model.updateDate" class="bg-blue-500 hover:bg-blue-600 text-white px-5 py-2 rounded cursor-pointer text-sm border-none">Model Update Date</button>
+
+		<p class="mb-4 mt-4">Current Date: <strong x:text="serviceModel.currentDate" class="font-bold"></strong></p>
+		<button x:on:click="serviceTest" class="bg-blue-500 hover:bg-blue-600 text-white px-5 py-2 rounded cursor-pointer text-sm border-none">Service Update Date</button>
+	</div>
 </div>
