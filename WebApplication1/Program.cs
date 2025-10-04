@@ -12,6 +12,9 @@ if (builder.Environment.IsDevelopment())
         .AddRazorRuntimeCompilation();
 }
 
+// XCon Vite Proxy hosted service
+builder.Services.AddXConViteProxy();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
