@@ -11,10 +11,10 @@
     "devDependencies": {
         "@types/jquery": "^3.5.0",
         "@types/node": "^20.0.0",
-        "@xcons/common": "^2.0.11",
+        "@xcons/common": "^2.0.16",
         "@xcons/core": "^2.0.1",
         "@xcons/vite-plugin": "^1.1.97",
-        "@xcons/widget": "^1.4.46",
+        "@xcons/widget": "^1.4.65",
         "autoprefixer": "^10.4.20",
         "eslint": "^9.36.0",
         "postcss": "^8.4.49",

@@ -6,6 +6,8 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+// XCon Widget Development Configuration
+// Optimized for TypeScript widget development with debug support
 export default defineConfig({
     root: path.resolve(__dirname, 'scripts'),
     base: '/scripts',

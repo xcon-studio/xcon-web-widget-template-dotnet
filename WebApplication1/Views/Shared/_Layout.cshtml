@@ -38,6 +38,19 @@
 			&copy; @DateTime.Now.Year - WebApplication1 - <a class="text-blue-500 hover:text-blue-700" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
 		</div>
 	</footer>
+
+	<script>
+		window.__XCONS_LOGGER_CONFIG__ = {
+			'@xcons/widget': {
+				enabled: true,
+				level: 1,  // WARN level (0=ERROR, 1=WARN, 2=INFO, 3=DEBUG, 4=TRACE)
+				prefix: 'WIDGET',
+				timestamp: true,
+				colors: true
+			}
+		};
+	</script>
+
 	<script type="module" src="/scripts/app.bootstrap.ts"></script>
 	@await RenderSectionAsync("Scripts", required: false)
 </body>
